@@ -1,11 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Zkouška angularu</title>
+    <title>Zkouska angularu</title>
 </head>
-<body>
-    <div ng-controller="">
-
+<body ng-app="scopingtryApp">
+    <h1>Zkouska cross-controller bindingu</h1>
+    <div ng-controller="CoruscantController">
+        Coruscant field:
+        <input type="text" ng-model="data.knight" />
     </div>
+    <div ng-controller="AstoriaController">
+        Astoria field:
+        <input type="text" ng-model="data.knight" />
+    </div>
+    <script src="components/angular/angular.min.js"></script>
+    <script src="scripts/app.js"></script>
+    <script src="scripts/services.js"></script>
+    <script src="scripts/controllers.js"></script>
 </body>
 </html>

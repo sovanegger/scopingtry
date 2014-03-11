@@ -1,0 +1,1 @@
+var scopingtryApp = angular.module('scopingtryApp', []);
